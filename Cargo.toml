@@ -1,8 +1,21 @@
 [workspace]
 resolver = "2"
 members = [
-    "server",
-    "api",
-    "client",
-    "base",
+    ".",
+    "example/api",
+    "example/server",
 ]
+
+[package]
+name = "rrpc"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+serde = { version = "~1" }
+serde_json = { version = "~1" }
+axum = { version = "~0.8" }
+tower = { version = "~0.5" }
+tonic = { version = "0.14" }
+bytes = { version = "~1" }
+futures-core = "0.3"

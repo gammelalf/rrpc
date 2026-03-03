@@ -5,7 +5,7 @@ use std::hash::RandomState;
 use api::GetRandomNumber;
 use api::GetRandomNumberRequest;
 use api::GetRandomNumberResponse;
-use base::server::NonStreamingMethod;
+use rrpc::server::NonStreamingMethod;
 use tonic::Request;
 use tonic::Response;
 use tonic::Status;
