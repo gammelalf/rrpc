@@ -1,5 +1,5 @@
 [package]
-name = "server"
+name = "client"
 version = "0.1.0"
 edition = "2024"
 publish = false
@@ -8,6 +8,6 @@ publish = false
 rrpc = { path = "../.." }
 api = { path = "../api" }
 
-tonic = { version = "~0.14", features = ["transport", "server"] }
+tonic = { version = "~0.14", features = ["transport", "channel"] }
 anyhow = { version = "~1" }
 tokio = { version = "~1", features = ["full"] }
